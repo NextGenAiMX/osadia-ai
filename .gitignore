@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large weight tensors & checkpoints (stored in Ceph / Vault)
+*.pt
+*.bin
+*.safetensors
+*.gguf
+checkpoints/
+logs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# OS & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
