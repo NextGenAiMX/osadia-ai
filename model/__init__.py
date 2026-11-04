@@ -9,6 +9,7 @@ from model.axiom_core import (
     TemporalPositionalWeave,
     StructuralRetrievalEmbeddings,
 )
+from model.osadia_dialect_engine import OSADIADialectEngine
 
 __all__ = [
     "AXIOMConfig",
@@ -19,4 +20,5 @@ __all__ = [
     "ReflectiveReasoningLoop",
     "TemporalPositionalWeave",
     "StructuralRetrievalEmbeddings",
+    "OSADIADialectEngine",
 ]

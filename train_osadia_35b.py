@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Next GenAi Mexico - OSADIA 3.5B Sovereign LATAM Foundation Model Production Trainer
-Architect: Dr. Rebekah Torres (PhD AI/ML MIT, PhD Cloud Eng. Stanford)
+Architect: Rebekah AI (Autonomous AI Operating System, Next Gen AI Mexico)
 Founder & Chief Architect: Rob Kucher
 Governing Standard: NGA-EDS v1.2 (DigiCert RFC 3161 Cryptographic Provenance)
 
