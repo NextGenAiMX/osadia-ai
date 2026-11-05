@@ -73,6 +73,12 @@ In accordance with internal anti-fabrication policies and Mexican criminal/consu
    * Verified modelfiles for tags `1.5b`, `3.5b`, `7b`, `12b`, and `latest`.
    * Pushed and synced `nextgenaidatafactory/osadia:3.5b` and `nextgenaidatafactory/osadia:latest`.
 
+### 3.4. Sovereign Architectural Lineage & Disambiguation (Anti-Fine-Tune Defense)
+To prevent market confusion, misinformation, or false claims that OSADÍA is merely a fine-tune of external models:
+* **Zero Base Weight Dependency**: OSADÍA is initialized from first principles (`pretrained_base_model: NONE`). It does not incorporate, borrow, or fine-tune weights from Qwen, Gemma, LLaMA, or Mistral. All student and master weights are independently trained.
+* **Role of External Teacher Models**: As registered in `OSADIA_TEACHER_REGISTRY.json`, open-source foundation models (DeepSeek, Qwen 2.5, Mistral) are utilized exclusively as **external synthetic curriculum generators** (generating text corpora and synthetic instruction pairs) under permissive Apache 2.0 / MIT licenses. Their weights are never merged, copied, or blended into the OSADIA neural architecture.
+* **Ollama & GGUF Runtime Engine Clarification**: The Ollama / `llama.cpp` runtime enforces that GGUF binary files map to an existing C++ kernel execution family (e.g. `qwen2`, `llama`, `gemma2`) to schedule matrix multiplications on consumer GPUs/CPUs. This is strictly a **hardware execution harness convention** and does not denote weight provenance or algorithmic lineage. OSADÍA's genuine intellectual property and custom neural architecture (OMS, DEC, SRE, RRL, TPW) are authoritatively embodied in our native PyTorch checkpoints (`osadia_core.py`).
+
 ---
 
 ## 4. CERTIFICATION & AUDIT SIGN-OFF
