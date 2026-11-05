@@ -1,8 +1,14 @@
-# AXIOM Model Package
+# OSADIA & AXIOM Sovereign Neural Package
+# Next GenAi Mexico & The Data Factory
 from model.axiom_core import (
     AXIOMConfig,
     AXIOMModel,
     AXIOMForCausalLM,
+)
+from model.osadia_core import (
+    OSADIAConfig,
+    OSADIAModel,
+    OSADIAForCausalLM,
     OrthogonalMemoryStream,
     DynamicExpertCoherence,
     ReflectiveReasoningLoop,
@@ -15,6 +21,9 @@ __all__ = [
     "AXIOMConfig",
     "AXIOMModel",
     "AXIOMForCausalLM",
+    "OSADIAConfig",
+    "OSADIAModel",
+    "OSADIAForCausalLM",
     "OrthogonalMemoryStream",
     "DynamicExpertCoherence",
     "ReflectiveReasoningLoop",
